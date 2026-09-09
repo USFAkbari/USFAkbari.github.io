@@ -9,10 +9,11 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p><strong>Yousef Akbari</strong></p>
-    <p>Mashhad, Iran</p>
-    <p><a href="mailto:usfakbari@gmail.com"><i class="fa-solid fa-envelope"></i> usfakbari@gmail.com</a></p>
-    <p><a href="https://linkedin.com/in/yousefakbari" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/USFAkbari" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></p>
+    <div style="font-size: 0.78rem; line-height: 1.4; text-align: center;">
+      <p style="margin-bottom: 3px;"><i class="fa-solid fa-location-dot"></i> Mashhad, Iran</p>
+      <p style="margin-bottom: 3px;"><a href="mailto:usfakbari@gmail.com"><i class="fa-solid fa-envelope"></i> usfakbari@gmail.com</a></p>
+      <p style="margin-bottom: 0;"><a href="https://github.com/USFAkbari" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/yousefakbari" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+    </div>
 
 selected_papers: false
 social: true
@@ -27,6 +28,22 @@ latest_posts:
   scrollable: true
   limit: 3
 ---
+
+<style>
+@media (min-width: 576px) {
+  .post-header {
+    max-width: calc(100% - 220px);
+  }
+  .profile {
+    margin-top: -4.5rem !important;
+    margin-bottom: 1.5rem !important;
+    max-width: 200px !important;
+  }
+  .profile figure {
+    margin-bottom: 0.4rem !important;
+  }
+}
+</style>
 
 <div style="text-align: justify;" markdown="1">
 

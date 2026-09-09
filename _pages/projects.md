@@ -1,128 +1,241 @@
 ---
 layout: page
-title: projects
+title: Featured Projects
 permalink: /projects/
-description: Featured engineering projects, cloud architectures, data automation pipelines, and AI research.
+description: Engineering platforms, cloud architectures, data automation pipelines, and AI research projects.
 nav: true
 nav_order: 2
 ---
 
-<div class="projects-list my-3">
+<style>
+:root {
+  --proj-primary: #0284c7;
+  --proj-primary-light: #e0f2fe;
+  --proj-primary-border: #bae6fd;
+  --proj-card-bg: #ffffff;
+  --proj-border: #e2e8f0;
+  --proj-text-main: #0f172a;
+  --proj-text-muted: #475569;
+  --proj-tag-bg: #f1f5f9;
+  --proj-tag-text: #334155;
+  --proj-mono: 'JetBrains Mono', monospace;
+}
+
+html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
+  --proj-primary: #38bdf8;
+  --proj-primary-light: #082f49;
+  --proj-primary-border: #075985;
+  --proj-card-bg: #131b2e;
+  --proj-border: #1e293b;
+  --proj-text-main: #f1f5f9;
+  --proj-text-muted: #94a3b8;
+  --proj-tag-bg: #1e293b;
+  --proj-tag-text: #cbd5e1;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.project-card-item {
+  background: var(--proj-card-bg);
+  border: 1px solid var(--proj-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+.project-card-item:hover {
+  border-color: var(--proj-primary-border);
+  box-shadow: 0 8px 16px -4px rgb(0 0 0 / 0.08);
+  transform: translateY(-2px);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--proj-text-main);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-card-title a {
+  color: var(--proj-text-main);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.project-card-title a:hover {
+  color: var(--proj-primary);
+}
+
+.project-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  background: var(--proj-primary-light);
+  color: var(--proj-primary);
+  border: 1px solid var(--proj-primary-border);
+  white-space: nowrap;
+}
+
+.project-card-body {
+  font-size: 0.92rem;
+  color: var(--proj-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-card-body ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.project-card-body li {
+  margin-bottom: 0.35rem;
+}
+
+.project-card-body strong {
+  color: var(--proj-text-main);
+}
+
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.p-tag {
+  font-family: var(--proj-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  background: var(--proj-tag-bg);
+  color: var(--proj-tag-text);
+  border-radius: 4px;
+  border: 1px solid var(--proj-border);
+}
+</style>
+
+<div class="projects-container">
 
   <!-- Project 1 -->
-  <div class="card mb-4 p-4 border shadow-sm hoverable">
-    <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
-      <h4 class="card-title font-weight-bold mb-1">
-        <a href="/projects/1_project/" class="text-primary text-decoration-none">Work-State Enterprise Engine</a>
-      </h4>
-      <span class="badge badge-primary px-2 py-1">Full-Stack & Systems</span>
+  <article class="project-card-item">
+    <div class="project-card-header">
+      <h3 class="project-card-title">
+        <i class="fa-solid fa-layer-group" style="color: var(--proj-primary);"></i>
+        <a href="https://github.com/USFAkbari/Work-State" target="_blank" rel="noopener">Work-State Enterprise Engine</a>
+      </h3>
+      <span class="project-badge">Full-Stack & Systems</span>
     </div>
-    <p class="card-text text-muted mb-2" style="line-height: 1.5;">
-      • <strong>Core Purpose:</strong> Enterprise workflow &amp; task status orchestration platform for high-concurrency environments.<br>
-      • <strong>Key Capabilities:</strong> Modular async FastAPI backend, PostgreSQL with connection pooling &amp; Alembic migrations, React 18 SPA with real-time optimistic state mutations.<br>
-      • <strong>Security &amp; Deploy:</strong> JWT token isolation, bcrypt password hashing, and multi-stage Docker containerization with automated Pytest suites.
-    </p>
-    <div class="d-flex flex-wrap gap-1 mt-2">
-      <span class="badge badge-light border">FastAPI</span>
-      <span class="badge badge-light border">Python 3.11</span>
-      <span class="badge badge-light border">React 18</span>
-      <span class="badge badge-light border">PostgreSQL</span>
-      <span class="badge badge-light border">Docker</span>
-      <span class="badge badge-light border">Alembic</span>
+    <div class="project-card-body">
+      <ul>
+        <li><strong>Core Purpose:</strong> Enterprise workflow, unit telemetry, and status orchestration engine built for high-reliability production environments.</li>
+        <li><strong>Backend & Architecture:</strong> Modular async FastAPI backend, PostgreSQL with connection pooling & Alembic migrations, JWT session isolation, and bcrypt security.</li>
+        <li><strong>Frontend & DevOps:</strong> React 18 SPA with real-time optimistic state mutations, containerized with multi-stage Docker builds and automated Pytest test suites.</li>
+      </ul>
     </div>
-  </div>
+    <div class="project-tech-tags">
+      <span class="p-tag">FastAPI</span>
+      <span class="p-tag">Python 3.11</span>
+      <span class="p-tag">React 18</span>
+      <span class="p-tag">PostgreSQL</span>
+      <span class="p-tag">Docker</span>
+      <span class="p-tag">Alembic</span>
+      <span class="p-tag">Pytest</span>
+    </div>
+  </article>
 
   <!-- Project 2 -->
-  <div class="card mb-4 p-4 border shadow-sm hoverable">
-    <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
-      <h4 class="card-title font-weight-bold mb-1">
-        <a href="/projects/2_project/" class="text-primary text-decoration-none">Appliance Store Platform</a>
-      </h4>
-      <span class="badge badge-primary px-2 py-1">Full-Stack & Systems</span>
+  <article class="project-card-item">
+    <div class="project-card-header">
+      <h3 class="project-card-title">
+        <i class="fa-solid fa-satellite" style="color: var(--proj-primary);"></i>
+        <a href="https://github.com/USFAkbari" target="_blank" rel="noopener">Automated Detection & Classification of Solar System Planets</a>
+      </h3>
+      <span class="project-badge">Applied AI & Computer Vision</span>
     </div>
-    <p class="card-text text-muted mb-2" style="line-height: 1.5;">
-      • <strong>Core Purpose:</strong> High-performance e-commerce catalog and retail back-office engine for home appliance distribution.<br>
-      • <strong>Key Capabilities:</strong> Multi-faceted relational filtering (brand, specs, price), real-time stock reservation, and ACID payment gateway checkout.<br>
-      • <strong>Architecture:</strong> Mobile-first lightweight frontend optimized for low-bandwidth networks with role-based administrative inventory triggers.
-    </p>
-    <div class="d-flex flex-wrap gap-1 mt-2">
-      <span class="badge badge-light border">Python</span>
-      <span class="badge badge-light border">JavaScript</span>
-      <span class="badge badge-light border">PostgreSQL</span>
-      <span class="badge badge-light border">REST API</span>
-      <span class="badge badge-light border">Docker</span>
-      <span class="badge badge-light border">TailwindCSS</span>
+    <div class="project-card-body">
+      <ul>
+        <li><strong>Core Purpose:</strong> Computer vision and machine learning pipeline for detecting and classifying solar system planets in NASA and ESA astronomical imagery.</li>
+        <li><strong>Image Processing:</strong> Multi-stage filtering (Gaussian, median), contrast optimization (CLAHE), Canny edge detection, and OpenCV contour segmentation.</li>
+        <li><strong>Feature Extraction & ML:</strong> Extracted shape moments, GLCM texture metrics, and color histograms; evaluated SVM and KNN multi-class classifiers for high-accuracy identification.</li>
+      </ul>
     </div>
-  </div>
+    <div class="project-tech-tags">
+      <span class="p-tag">Python</span>
+      <span class="p-tag">OpenCV</span>
+      <span class="p-tag">scikit-learn</span>
+      <span class="p-tag">NumPy</span>
+      <span class="p-tag">Matplotlib</span>
+      <span class="p-tag">Computer Vision</span>
+    </div>
+  </article>
 
   <!-- Project 3 -->
-  <div class="card mb-4 p-4 border shadow-sm hoverable">
-    <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
-      <h4 class="card-title font-weight-bold mb-1">
-        <a href="/projects/3_project/" class="text-primary text-decoration-none">Attendant &amp; Evaluation Dashboards</a>
-      </h4>
-      <span class="badge badge-success px-2 py-1">Data & Automation</span>
+  <article class="project-card-item">
+    <div class="project-card-header">
+      <h3 class="project-card-title">
+        <i class="fa-solid fa-fingerprint" style="color: var(--proj-primary);"></i>
+        <a href="https://github.com/USFAkbari/Attendance_Ddashboard" target="_blank" rel="noopener">HR Biometric Attendance & Evaluation Pipeline</a>
+      </h3>
+      <span class="project-badge">Data Engineering & Automation</span>
     </div>
-    <p class="card-text text-muted mb-2" style="line-height: 1.5;">
-      • <strong>Core Purpose:</strong> Automated technical unit management dashboard for staff attendance, monthly KPI scores, and helpdesk SLA ticketing.<br>
-      • <strong>Key Capabilities:</strong> Custom parsing pipeline converting unstructured Persian Word (.docx) reports and biometric time-clocks into structured, clean Excel sheets.<br>
-      • <strong>Analytics &amp; BI:</strong> Algorithmic calculation of monthly departmental KPIs, MTTR resolution time tracking, and dynamic interactive charts.
-    </p>
-    <div class="d-flex flex-wrap gap-1 mt-2">
-      <span class="badge badge-light border">Python</span>
-      <span class="badge badge-light border">FastAPI</span>
-      <span class="badge badge-light border">Pandas</span>
-      <span class="badge badge-light border">openpyxl</span>
-      <span class="badge badge-light border">python-docx</span>
-      <span class="badge badge-light border">React</span>
-      <span class="badge badge-light border">ECharts</span>
+    <div class="project-card-body">
+      <ul>
+        <li><strong>Core Purpose:</strong> Production telemetry extraction system interfacing with ZKTeco hardware terminals via TCP/UDP socket protocols.</li>
+        <li><strong>ETL & Data Processing:</strong> Pandas pipeline consolidating biometric attendance logs and Persian Word reports (.docx) into structured, audit-ready data.</li>
+        <li><strong>KPI Analytics:</strong> Dynamic reporting engine tracking staff shift adherence, anomaly detection, and department SLA metrics.</li>
+      </ul>
     </div>
-  </div>
+    <div class="project-tech-tags">
+      <span class="p-tag">Python</span>
+      <span class="p-tag">FastAPI</span>
+      <span class="p-tag">Pandas</span>
+      <span class="p-tag">pyzk</span>
+      <span class="p-tag">openpyxl</span>
+      <span class="p-tag">React</span>
+    </div>
+  </article>
 
   <!-- Project 4 -->
-  <div class="card mb-4 p-4 border shadow-sm hoverable">
-    <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
-      <h4 class="card-title font-weight-bold mb-1">
-        <a href="/projects/4_project/" class="text-primary text-decoration-none">Automated Detection &amp; Classification of Planets</a>
-      </h4>
-      <span class="badge badge-info px-2 py-1">Applied AI & Vision</span>
+  <article class="project-card-item">
+    <div class="project-card-header">
+      <h3 class="project-card-title">
+        <i class="fa-solid fa-terminal" style="color: var(--proj-primary);"></i>
+        <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener">LVM Disk Extender & Open-Source DevOps Utilities</a>
+      </h3>
+      <span class="project-badge">Cloud-Native & Linux Ops</span>
     </div>
-    <p class="card-text text-muted mb-2" style="line-height: 1.5;">
-      • <strong>Core Purpose:</strong> Computer vision and machine learning pipeline for detecting and classifying planets in astronomical imagery (NASA &amp; ESA archives).<br>
-      • <strong>Methodology:</strong> Gaussian/median filtering, CLAHE, background subtraction, Canny edge detection, and OpenCV contour segmentation.<br>
-      • <strong>Feature Engineering &amp; ML:</strong> Extracted GLCM texture descriptors, color histograms, and morphological moments; evaluated SVM and KNN multi-class classifiers.
-    </p>
-    <div class="d-flex flex-wrap gap-1 mt-2">
-      <span class="badge badge-light border">OpenCV</span>
-      <span class="badge badge-light border">Python</span>
-      <span class="badge badge-light border">scikit-learn</span>
-      <span class="badge badge-light border">NumPy</span>
-      <span class="badge badge-light border">Matplotlib</span>
+    <div class="project-card-body">
+      <ul>
+        <li><strong>Core Purpose:</strong> Automated operational utility for dynamically inspecting, extending, and resizing Logical Volume Management (LVM) partitions in production Linux systems.</li>
+        <li><strong>DevOps Toolkit:</strong> Part of an open-source suite including automated Mattermost Team Edition deployment, Docker environment bootstrap scripts, and proxy health checkers.</li>
+      </ul>
     </div>
-  </div>
-
-  <!-- Project 5 -->
-  <div class="card mb-4 p-4 border shadow-sm hoverable">
-    <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
-      <h4 class="card-title font-weight-bold mb-1">
-        <a href="/projects/5_project/" class="text-primary text-decoration-none">Enterprise DevOps &amp; Cloud Infrastructure</a>
-      </h4>
-      <span class="badge badge-secondary px-2 py-1">DevOps & Infra</span>
+    <div class="project-tech-tags">
+      <span class="p-tag">Bash</span>
+      <span class="p-tag">Linux LVM</span>
+      <span class="p-tag">Docker</span>
+      <span class="p-tag">SysAdmin</span>
+      <span class="p-tag">Shell Automation</span>
     </div>
-    <p class="card-text text-muted mb-2" style="line-height: 1.5;">
-      • <strong>Core Purpose:</strong> High-availability virtualization, Docker containerization, and disaster recovery automation for a platform with 100,000+ registered users.<br>
-      • <strong>Infrastructure:</strong> Multi-node VMware ESXi cluster administration (~10 production VMs), 5+ containerized production services, and zero-downtime FreePBX VoIP telephony.<br>
-      • <strong>Storage &amp; Backup:</strong> Automated TrueNAS ZFS storage arrays (1–10 TB) with snapshot replication and Veeam backup automation (saving 3–4 hours/week).
-    </p>
-    <div class="d-flex flex-wrap gap-1 mt-2">
-      <span class="badge badge-light border">VMware ESXi</span>
-      <span class="badge badge-light border">Docker</span>
-      <span class="badge badge-light border">Docker Compose</span>
-      <span class="badge badge-light border">Bash</span>
-      <span class="badge badge-light border">TrueNAS ZFS</span>
-      <span class="badge badge-light border">Veeam</span>
-      <span class="badge badge-light border">FreePBX</span>
-    </div>
-  </div>
+  </article>
 
 </div>

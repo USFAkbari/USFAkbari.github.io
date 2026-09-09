@@ -7,28 +7,33 @@ subtitle: Prospective M.Sc. Candidate in Computer Science / Software Engineering
 profile:
   align: right
   image: 
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>Systems and DevOps Engineer</p>
+    <p><strong>Yousef Akbari</strong></p>
+    <p>Systems & DevOps Engineer</p>
     <p>Mashhad, Iran</p>
-    <p>usfakbari@gmail.com</p>
+    <p><a href="mailto:usfakbari@gmail.com">usfakbari@gmail.com</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-I am a Systems and DevOps Engineer with 2+ years of experience in VMware ESXi, Docker containerization, TrueNAS ZFS storage, and FreePBX VoIP systems. I hold a Bachelor's degree in Computer Engineering (Artificial Intelligence) from Azad University, North Tehran Branch.
+### Biography
 
-My research interests span Applied AI and Computer Vision, MLOps and Intelligent Automation, Cloud-Native Systems Architecture, and Software Reliability and Performance. I am currently preparing for IELTS and seeking M.Sc. opportunities in Computer Science / Software Engineering.
+I am a Systems and DevOps Engineer with over 2 years of hands-on experience in enterprise VMware ESXi virtualization, Docker containerization, TrueNAS ZFS storage architecture, and FreePBX VoIP telephony systems. I hold a Bachelor of Engineering in Computer Engineering (Artificial Intelligence) from Azad University, North Tehran Branch.
 
-Link to my social media connections below. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My technical and research focus lies at the intersection of **Applied AI / Computer Vision**, **MLOps & Intelligent Automation**, **Cloud-Native Systems Architecture**, and **Software Reliability & Observability**.
+
+I am actively preparing for my IELTS examination and seeking M.Sc. research opportunities in Computer Science and Software Engineering.
+
+Feel free to explore my [CV](/cv/), check out my [Projects](/projects/), or connect with me via [LinkedIn](https://linkedin.com/in/yousefakbari) and [GitHub](https://github.com/USFAkbari).

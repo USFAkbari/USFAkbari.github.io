@@ -28,7 +28,7 @@ latest_posts:
   limit: 3
 ---
 
-<div style="text-align: justify;">
+<div style="text-align: justify;" markdown="1">
 
 ### Biography
 

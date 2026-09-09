@@ -1,7 +1,22 @@
 github_users:
   - USFAkbari
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
   - USFAkbari/USFAkbari.github.io
+  - USFAkbari/DnsMnager
+  - USFAkbari/LVM_Disk_Extender
+  - USFAkbari/docker_Initiation
+  - USFAkbari/proxy-health-checker
+  - USFAkbari/Push_Notification
+  - USFAkbari/Excel_Service
+  - USFAkbari/Bia_Pain_Bache
+  - USFAkbari/academic-resume
+  - USFAkbari/Audio_Signal_Processing
+  - USFAkbari/house-price-prediction-linear-regression
+  - USFAkbari/ToValet
+  - USFAkbari/Mattermost_TeamEdition
+  - USFAkbari/rocketchat-compose
+  - USFAkbari/Tilde_Enhancd_StartUp_Page
+  - USFAkbari/simpe_Pricing

@@ -1,23 +1,21 @@
 ---
 layout: page
-title: Automated Detection of Planets
-description: Computer vision & image processing pipeline for detecting and classifying planets in NASA/ESA astronomical imagery (2020–2021).
-img: assets/img/12.jpg
+title: Work-State Management System
+description: Enterprise workflow & task tracking backend with FastAPI, React, PostgreSQL, and Docker containerization.
+img: assets/img/3.jpg
 importance: 1
-category: Research & AI
+category: Flagship & Full-Stack
 related_publications: false
 ---
 
-### Project Overview
-Bachelor's Internship Project completed at Azad University, North Tehran Branch (2020–2021).
+### Overview
+**Work-State** is a full-stack enterprise task and work status orchestration engine designed for high reliability, role-based access control, and granular event tracking.
 
-Designed and implemented an automated computer vision pipeline for detecting and classifying celestial bodies and planets in astronomical imagery obtained from NASA and ESA archives.
-
-### Methodology & Pipeline
-- **Preprocessing:** Gaussian and median filtering, histogram equalization, CLAHE (Contrast Limited Adaptive Histogram Equalization), and background subtraction.
-- **Segmentation & Detection:** Canny edge detection, morphological transforms, and OpenCV contour analysis.
-- **Feature Extraction:** Extracted morphological descriptors, photometric stats, color histograms, and Gray-Level Co-occurrence Matrix (GLCM) texture features.
-- **Classification:** Evaluated SVM (Support Vector Machines) and KNN (K-Nearest Neighbors) classifiers for multi-class planetary identification.
+### Key Capabilities
+- **Backend Architecture:** Asynchronous FastAPI core with SQLAlchemy ORM, Alembic schema migrations, and PostgreSQL.
+- **Frontend Dashboard:** Modern responsive React 18 single-page application with real-time state synchronization, optimistic UI updates, and dark/light theming.
+- **Containerization & CI/CD:** Fully containerized with multi-stage Docker builds, Docker Compose orchestration, and automated test pipelines.
+- **Security:** JWT authentication, bcrypt password hashing, and strict CORS/CSRF middleware.
 
 ### Tech Stack
-`Python` `OpenCV` `NumPy` `scikit-learn` `Matplotlib`
+`FastAPI` `Python` `React` `PostgreSQL` `Docker` `Alembic` `TailwindCSS`

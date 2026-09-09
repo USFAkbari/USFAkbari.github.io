@@ -1,22 +1,21 @@
 ---
 layout: page
-title: Production DevOps & ESXi Infrastructure
-description: Virtualization, containerization (Docker), and automated backup pipelines for 100k+ users.
-img: assets/img/7.jpg
+title: Appliance Store Platform
+description: High-performance e-commerce catalog, inventory control, and payment gateway integration.
+img: assets/img/5.jpg
 importance: 2
-category: DevOps & Infra
+category: Full-Stack & Web
 related_publications: false
 ---
 
 ### Overview
-Administered and automated multi-node VMware ESXi and Docker environments at Khademan Emam Zaman (shamim313.com) and Part Software Group.
+A comprehensive e-commerce and retail management platform for household appliances, featuring dynamic catalog filtering, shopping cart persistence, and order management.
 
-### Key Contributions & Achievements
-- **High Availability & Virtualization:** Administered VMware ESXi clusters hosting production VMs serving 100,000+ registered users with zero unplanned downtime.
-- **Docker Containerization:** Containerized 5+ core backend services, standardizing deployments and reducing deployment cycle times by ~10%.
-- **Disaster Recovery & Automation:** Implemented automated backup pipelines with Veeam and Bash scripting, saving 3–4 engineer hours weekly.
-- **VoIP Telephony:** Maintained high-availability FreePBX VoIP system supporting 20+ enterprise staff extensions.
-- **Storage & Security:** Managed TrueNAS ZFS storage arrays (1–10 TB) with snapshot replication and network firewall access policies.
+### Features & Engineering
+- **Catalog & Inventory:** Real-time stock reservation, multi-attribute product filters (category, brand, technical specs), and elastic search indexing.
+- **Checkout & Payments:** Secure payment gateway integration with transactional guarantees and automated SMS/email invoice notifications.
+- **Responsive Interface:** Mobile-first responsive UI optimized for low-bandwidth networks and mobile shoppers.
+- **Admin Portal:** Sales reporting, order lifecycle status tracking, and inventory replenishment alerts.
 
 ### Tech Stack
-`VMware ESXi` `Docker` `Docker Compose` `Bash` `TrueNAS (ZFS)` `Veeam` `FreePBX` `Ubuntu Server`
+`Python` `JavaScript` `Docker` `REST API` `TailwindCSS` `PostgreSQL`

@@ -46,32 +46,10 @@ I am actively seeking **M.Sc. research opportunities and graduate assistantships
 
 ### Research Interests
 
-<div class="row row-cols-1 row-cols-md-2 g-3 my-2 text-start">
-  <div class="col mb-3">
-    <div class="card h-100 p-3 border shadow-sm">
-      <h6 class="card-title text-primary font-weight-bold"><i class="fa-solid fa-eye"></i> Applied AI & Computer Vision</h6>
-      <p class="card-text small text-muted mb-0">Feature extraction (GLCM, morphology, contours), classical ML classification (SVM, KNN), and automated scientific image processing pipelines.</p>
-    </div>
-  </div>
-  <div class="col mb-3">
-    <div class="card h-100 p-3 border shadow-sm">
-      <h6 class="card-title text-primary font-weight-bold"><i class="fa-solid fa-cloud-bolt"></i> MLOps & Intelligent Automation</h6>
-      <p class="card-text small text-muted mb-0">Production ML deployment, containerized pipelines, automated testing, model lifecycle monitoring, and configuration drift prevention.</p>
-    </div>
-  </div>
-  <div class="col mb-3">
-    <div class="card h-100 p-3 border shadow-sm">
-      <h6 class="card-title text-primary font-weight-bold"><i class="fa-solid fa-network-wired"></i> Cloud-Native & Distributed Systems</h6>
-      <p class="card-text small text-muted mb-0">Multi-node cluster virtualization, container orchestration, microservices communication, and high-availability architecture under scale.</p>
-    </div>
-  </div>
-  <div class="col mb-3">
-    <div class="card h-100 p-3 border shadow-sm">
-      <h6 class="card-title text-primary font-weight-bold"><i class="fa-solid fa-shield-halved"></i> Software Reliability & Observability</h6>
-      <p class="card-text small text-muted mb-0">Empirical system performance analysis, fault tolerance, telemetry pipelines, zero-downtime rollouts, and disaster recovery automation.</p>
-    </div>
-  </div>
-</div>
+- **Applied AI and Computer Vision:** Image processing, object detection, and pattern recognition in scientific and real-world domains.
+- **MLOps and Intelligent Automation:** Production ML deployment, containerization, CI/CD, orchestration, and predictive operations.
+- **Cloud-Native Systems Architecture:** Distributed, containerized infrastructure and high-availability workloads at scale.
+- **Software Reliability and Performance:** Fault tolerance, observability, deployment strategies, and empirical systems analysis.
 
 ---
 

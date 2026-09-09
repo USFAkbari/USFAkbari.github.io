@@ -7,6 +7,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_includes/**"
+      - "_layouts/**"
+      - "**/*.scss"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +38,10 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_includes/**"
+      - "_layouts/**"
+      - "**/*.scss"
       - "**.bib"
       - "**.html"
       - "**.js"

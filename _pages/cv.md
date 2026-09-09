@@ -8,63 +8,21 @@ nav_order: 1
 ---
 
 <style>
-:root {
-    --cv-bg: #f8fafc;
-    --cv-surface: #ffffff;
-    --cv-text-main: #0f172a;
-    --cv-text-muted: #475569;
-    --cv-text-light: #64748b;
-    --cv-primary: #0284c7;
-    --cv-primary-dark: #0369a1;
-    --cv-primary-light: #e0f2fe;
-    --cv-primary-border: #bae6fd;
-    --cv-border: #e2e8f0;
-    --cv-border-hover: #cbd5e1;
-    --cv-tag-bg: #f1f5f9;
-    --cv-tag-text: #334155;
-    --cv-accent: #0d9488;
-    --cv-radius-sm: 6px;
-    --cv-radius-md: 10px;
-    --cv-radius-lg: 14px;
-    --cv-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --cv-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-    --cv-font-mono: 'JetBrains Mono', monospace;
-}
-
-html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
-    --cv-bg: #0b0f19;
-    --cv-surface: #131b2e;
-    --cv-text-main: #f1f5f9;
-    --cv-text-muted: #94a3b8;
-    --cv-text-light: #64748b;
-    --cv-primary: #38bdf8;
-    --cv-primary-dark: #0284c7;
-    --cv-primary-light: #082f49;
-    --cv-primary-border: #075985;
-    --cv-border: #1e293b;
-    --cv-border-hover: #334155;
-    --cv-tag-bg: #1e293b;
-    --cv-tag-text: #cbd5e1;
-    --cv-accent: #2dd4bf;
-    --cv-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-    --cv-shadow-md: 0 4px 12px 0 rgb(0 0 0 / 0.4);
-}
-
 .cv-container {
     max-width: 860px;
     margin: 1rem auto 3rem;
-    background: var(--cv-surface);
-    border: 1px solid var(--cv-border);
-    border-radius: var(--cv-radius-lg);
-    box-shadow: var(--cv-shadow-md);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     padding: 2.5rem 2.25rem;
     line-height: 1.65;
-    color: var(--cv-text-main);
+    color: var(--text-main);
 }
 
 /* Header */
 .cv-header {
-    border-bottom: 2px solid var(--cv-border);
+    border-bottom: 2px solid var(--border);
     padding-bottom: 1.75rem;
     margin-bottom: 2.25rem;
 }
@@ -81,7 +39,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: -0.025em;
-    color: var(--cv-text-main);
+    color: var(--text-main);
     line-height: 1.2;
     margin-bottom: 0.35rem;
 }
@@ -89,7 +47,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 .target-role {
     font-size: 1.05rem;
     font-weight: 500;
-    color: var(--cv-primary);
+    color: var(--primary);
     margin-bottom: 0.5rem;
 }
 
@@ -99,7 +57,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     gap: 0.75rem 1.5rem;
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: var(--cv-text-muted);
+    color: var(--text-muted);
 }
 
 .contact-item {
@@ -107,17 +65,17 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     align-items: center;
     gap: 0.4rem;
     text-decoration: none;
-    color: var(--cv-text-muted) !important;
+    color: var(--text-muted) !important;
     transition: color 0.15s ease;
 }
 
 .contact-item i {
-    color: var(--cv-primary);
+    color: var(--primary);
     font-size: 0.95rem;
 }
 
 .contact-item:hover {
-    color: var(--cv-primary) !important;
+    color: var(--primary) !important;
 }
 
 .header-actions {
@@ -126,42 +84,42 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     gap: 0.5rem;
 }
 
-.cv-btn {
+.btn-cv {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 0.5rem 0.9rem;
-    border-radius: var(--cv-radius-sm);
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     text-decoration: none !important;
     transition: all 0.15s ease;
-    border: 1px solid var(--cv-border);
-    background: var(--cv-surface);
-    color: var(--cv-text-main) !important;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-main) !important;
 }
 
-.cv-btn:hover {
-    border-color: var(--cv-primary);
-    color: var(--cv-primary) !important;
-    background: var(--cv-primary-light);
+.btn-cv:hover {
+    border-color: var(--primary);
+    color: var(--primary) !important;
+    background: var(--primary-light);
 }
 
-.cv-btn-primary {
-    background: var(--cv-primary);
+.btn-cv-primary {
+    background: var(--primary);
     color: #ffffff !important;
-    border-color: var(--cv-primary);
+    border-color: var(--primary);
 }
 
-.cv-btn-primary:hover {
-    background: var(--cv-primary-dark);
+.btn-cv-primary:hover {
+    background: var(--primary-dark);
     color: #ffffff !important;
 }
 
 /* Sections */
 .cv-section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.25rem;
 }
 
 .cv-section:last-child {
@@ -172,26 +130,26 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
     padding-bottom: 0.45rem;
-    border-bottom: 1px solid var(--cv-border);
+    border-bottom: 1px solid var(--border);
 }
 
 .section-title {
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--cv-text-main);
+    letter-spacing: 0.04em;
+    color: var(--text-main);
     margin: 0;
 }
 
 .section-icon {
-    color: var(--cv-primary);
+    color: var(--primary);
     font-size: 1.1rem;
 }
 
-/* Research Interests */
+/* Research Interests Grid */
 .interests-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -199,26 +157,26 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 }
 
 .interest-card {
-    background: var(--cv-tag-bg);
-    border-left: 3px solid var(--cv-primary);
+    background: var(--tag-bg);
+    border-left: 3px solid var(--primary);
     padding: 0.85rem 1.15rem;
-    border-radius: 0 var(--cv-radius-sm) var(--cv-radius-sm) 0;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 0.93rem;
 }
 
 .interest-card strong {
-    color: var(--cv-text-main);
+    color: var(--text-main);
     font-weight: 600;
 }
 
 .interest-card p {
-    color: var(--cv-text-muted);
+    color: var(--text-muted);
     margin-top: 0.2rem;
     margin-bottom: 0;
     font-size: 0.88rem;
 }
 
-/* Entries */
+/* Timeline Items */
 .entry {
     margin-bottom: 1.6rem;
 }
@@ -239,100 +197,104 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 .entry-title {
     font-size: 1.02rem;
     font-weight: 600;
-    color: var(--cv-text-main);
+    color: var(--text-main);
 }
 
 .entry-date {
-    font-size: 0.82rem;
-    font-family: var(--cv-font-mono);
+    font-size: 0.83rem;
+    font-family: var(--font-mono);
     font-weight: 500;
-    color: var(--cv-text-light);
+    color: var(--text-light);
     white-space: nowrap;
 }
 
 .entry-subtitle {
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--cv-primary);
+    color: var(--primary);
     margin-bottom: 0.45rem;
 }
 
 .entry-subtitle span {
-    color: var(--cv-text-muted);
+    color: var(--text-muted);
     font-weight: 400;
 }
 
 .entry-description {
     font-size: 0.9rem;
-    color: var(--cv-text-muted);
+    color: var(--text-muted);
     margin-bottom: 0.5rem;
 }
 
 .entry-list {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .entry-list li {
     position: relative;
-    padding-left: 1.25rem;
+    padding-left: 1.15rem;
     font-size: 0.9rem;
-    color: var(--cv-text-muted);
+    color: var(--text-muted);
 }
 
 .entry-list li::before {
     content: "•";
     position: absolute;
-    left: 0.25rem;
-    color: var(--cv-primary);
+    left: 0.2rem;
+    color: var(--primary);
     font-weight: bold;
 }
 
 .entry-list li strong {
-    color: var(--cv-text-main);
+    color: var(--text-main);
 }
 
 /* Tech Tags */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 0.55rem;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
 }
 
 .tag {
-    font-family: var(--cv-font-mono);
-    font-size: 0.76rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
     font-weight: 500;
     padding: 0.18rem 0.55rem;
-    background: var(--cv-tag-bg);
-    color: var(--cv-tag-text);
+    background: var(--tag-bg);
+    color: var(--tag-text);
     border-radius: 4px;
-    border: 1px solid var(--cv-border);
+    border: 1px solid var(--border);
 }
 
 .tag-accent {
-    background: var(--cv-primary-light);
-    color: var(--cv-primary-dark);
-    border-color: var(--cv-primary-border);
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-border);
+}
+
+html[data-theme='dark'] .tag-accent {
+    color: var(--primary);
 }
 
 /* Skills Matrix */
 .skills-matrix {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.15rem;
+    gap: 1rem;
 }
 
 .skill-group {
-    background: var(--cv-tag-bg);
-    border: 1px solid var(--cv-border);
-    border-radius: var(--cv-radius-md);
-    padding: 1.1rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.15rem;
 }
 
 .skill-group-title {
@@ -340,8 +302,15 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--cv-text-main);
-    margin-bottom: 0.6rem;
+    color: var(--text-main);
+    margin-bottom: 0.55rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.skill-group-title i {
+    color: var(--primary);
 }
 
 .skill-tags {
@@ -350,23 +319,24 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     gap: 0.35rem;
 }
 
-/* Projects Grid */
+/* Project Cards */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.15rem;
+    gap: 1rem;
 }
 
 .project-card {
-    border: 1px solid var(--cv-border);
-    border-radius: var(--cv-radius-md);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
     padding: 1.15rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-    border-color: var(--cv-primary-border);
-    box-shadow: var(--cv-shadow-sm);
+    border-color: var(--primary-border);
+    box-shadow: var(--shadow-sm);
 }
 
 .project-header {
@@ -381,7 +351,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 .project-name {
     font-size: 0.98rem;
     font-weight: 600;
-    color: var(--cv-text-main);
+    color: var(--text-main);
 }
 
 .project-link {
@@ -389,14 +359,14 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     align-items: center;
     gap: 0.25rem;
     font-size: 0.8rem;
-    font-family: var(--cv-font-mono);
-    color: var(--cv-primary) !important;
+    font-family: var(--font-mono);
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
 }
 
 .project-link:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
 /* Two Column Grid */
@@ -406,28 +376,19 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     gap: 1.5rem;
 }
 
-@media print {
-    .cv-container {
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
-        max-width: 100%;
-    }
-    .header-actions, nav, footer, .navbar {
-        display: none !important;
-    }
-    .cv-section {
-        page-break-inside: avoid;
-    }
-}
-
 @media (max-width: 640px) {
     .cv-container {
         padding: 1.5rem 1.1rem;
     }
+    .name-title h1 {
+        font-size: 1.7rem;
+    }
     .two-col-grid {
         grid-template-columns: 1fr;
+    }
+    .contact-grid {
+        flex-direction: column;
+        gap: 0.4rem;
     }
 }
 </style>
@@ -441,10 +402,10 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
                 <div class="target-role">Prospective M.Sc. Candidate &bull; Computer Science / Software Engineering</div>
             </div>
             <div class="header-actions">
-                <a class="cv-btn cv-btn-primary" href="{{ '/assets/pdf/Yousef_Akbari_Academic_CV.pdf' | relative_url }}" target="_blank">
-                    <i class="fa-solid fa-file-pdf"></i> Download PDF
+                <a class="btn-cv btn-cv-primary" href="{{ '/assets/pdf/Yousef_Akbari_Academic_CV.pdf' | relative_url }}" target="_blank">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download PDF
                 </a>
-                <button class="cv-btn" onclick="window.print()">
+                <button class="btn-cv" onclick="window.print()">
                     <i class="fa-solid fa-print"></i> Print
                 </button>
             </div>
@@ -455,18 +416,18 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
                 <i class="fa-solid fa-location-dot"></i>
                 <span>Mashhad, Iran</span>
             </div>
-            <a class="contact-item" href="mailto:usfakbari@gmail.com">
+            <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span>usfakbari@gmail.com</span>
-            </a>
-            <a class="contact-item" href="https://linkedin.com/in/yousefakbari" target="_blank" rel="noopener">
+                <a href="mailto:usfakbari@gmail.com">usfakbari@gmail.com</a>
+            </div>
+            <div class="contact-item">
                 <i class="fa-brands fa-linkedin"></i>
-                <span>linkedin.com/in/yousefakbari</span>
-            </a>
-            <a class="contact-item" href="https://github.com/USFAkbari" target="_blank" rel="noopener">
+                <a href="https://linkedin.com/in/yousefakbari" target="_blank" rel="noopener">linkedin.com/in/yousefakbari</a>
+            </div>
+            <div class="contact-item">
                 <i class="fa-brands fa-github"></i>
-                <span>github.com/USFAkbari</span>
-            </a>
+                <a href="https://github.com/USFAkbari" target="_blank" rel="noopener">github.com/USFAkbari</a>
+            </div>
         </div>
     </header>
 
@@ -522,7 +483,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
         </div>
         <div class="skills-matrix">
             <div class="skill-group">
-                <div class="skill-group-title">Programming & Scripting</div>
+                <div class="skill-group-title"><i class="fa-solid fa-terminal"></i> Programming & Scripting</div>
                 <div class="skill-tags">
                     <span class="tag tag-accent">Python</span>
                     <span class="tag tag-accent">Bash / Shell</span>
@@ -533,7 +494,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-title">DevOps & Cloud-Native</div>
+                <div class="skill-group-title"><i class="fa-solid fa-cubes"></i> DevOps & Cloud-Native</div>
                 <div class="skill-tags">
                     <span class="tag tag-accent">Docker</span>
                     <span class="tag tag-accent">Docker Compose</span>
@@ -544,7 +505,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-title">AI/ML & Data Engineering</div>
+                <div class="skill-group-title"><i class="fa-solid fa-brain"></i> AI/ML & Data Engineering</div>
                 <div class="skill-tags">
                     <span class="tag tag-accent">OpenCV</span>
                     <span class="tag tag-accent">NumPy & Pandas</span>
@@ -554,7 +515,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-title">Systems & Infrastructure</div>
+                <div class="skill-group-title"><i class="fa-solid fa-server"></i> Systems & Infrastructure</div>
                 <div class="skill-tags">
                     <span class="tag">TrueNAS / ZFS</span>
                     <span class="tag">MikroTik RouterOS</span>
@@ -650,14 +611,14 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     <!-- Open Source & Selected Projects -->
     <section class="cv-section">
         <div class="section-header">
-            <span class="section-icon"><i class="fa-solid fa-code-branch"></i></span>
+            <span class="section-icon"><i class="fa-solid fa-rocket"></i></span>
             <h2 class="section-title">Open-Source & Technical Projects</h2>
         </div>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
                     <span class="project-name">LVM Disk Extender & DevOps Utilities</span>
-                    <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                    <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub &rarr;</a>
                 </div>
                 <p class="entry-description">Automated Bash tool for dynamically detecting, extending, and resizing Logical Volume Management (LVM) partitions in production Linux systems.</p>
                 <div class="tech-stack">
@@ -670,7 +631,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
             <div class="project-card">
                 <div class="project-header">
                     <span class="project-name">Audio Signal Processing & Feature Extraction</span>
-                    <a href="https://github.com/USFAkbari/Audio_Signal_Processing" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
+                    <a href="https://github.com/USFAkbari/Audio_Signal_Processing" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub &rarr;</a>
                 </div>
                 <p class="entry-description">Signal analysis pipelines for acoustic feature extraction, spectrogram calculation, and ML preprocessing.</p>
                 <div class="tech-stack">

@@ -8,50 +8,25 @@ nav_order: 2
 ---
 
 <style>
-:root {
-  --proj-primary: #0284c7;
-  --proj-primary-light: #e0f2fe;
-  --proj-primary-border: #bae6fd;
-  --proj-card-bg: #ffffff;
-  --proj-border: #e2e8f0;
-  --proj-text-main: #0f172a;
-  --proj-text-muted: #475569;
-  --proj-tag-bg: #f1f5f9;
-  --proj-tag-text: #334155;
-  --proj-mono: 'JetBrains Mono', monospace;
-}
-
-html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
-  --proj-primary: #38bdf8;
-  --proj-primary-light: #082f49;
-  --proj-primary-border: #075985;
-  --proj-card-bg: #131b2e;
-  --proj-border: #1e293b;
-  --proj-text-main: #f1f5f9;
-  --proj-text-muted: #94a3b8;
-  --proj-tag-bg: #1e293b;
-  --proj-tag-text: #cbd5e1;
-}
-
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin: 1.5rem 0 3rem;
 }
 
 .project-card-item {
-  background: var(--proj-card-bg);
-  border: 1px solid var(--proj-border);
-  border-radius: 12px;
-  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+  box-shadow: var(--shadow-sm);
 }
 
 .project-card-item:hover {
-  border-color: var(--proj-primary-border);
-  box-shadow: 0 8px 16px -4px rgb(0 0 0 / 0.08);
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
@@ -65,9 +40,9 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 }
 
 .project-card-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--proj-text-main);
+  color: var(--text-main);
   margin: 0;
   display: flex;
   align-items: center;
@@ -75,31 +50,35 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 }
 
 .project-card-title a {
-  color: var(--proj-text-main);
+  color: var(--text-main);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .project-card-title a:hover {
-  color: var(--proj-primary);
+  color: var(--primary);
 }
 
 .project-badge {
   font-size: 0.78rem;
   font-weight: 600;
-  padding: 0.25rem 0.65rem;
+  padding: 0.22rem 0.65rem;
   border-radius: 20px;
-  background: var(--proj-primary-light);
-  color: var(--proj-primary);
-  border: 1px solid var(--proj-primary-border);
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-border);
   white-space: nowrap;
+}
+
+html[data-theme='dark'] .project-badge {
+  color: var(--primary);
 }
 
 .project-card-body {
   font-size: 0.92rem;
-  color: var(--proj-text-muted);
+  color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .project-card-body ul {
@@ -112,7 +91,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 }
 
 .project-card-body strong {
-  color: var(--proj-text-main);
+  color: var(--text-main);
 }
 
 .project-tech-tags {
@@ -122,24 +101,34 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
 }
 
 .p-tag {
-  font-family: var(--proj-mono);
+  font-family: var(--font-mono);
   font-size: 0.76rem;
   font-weight: 500;
   padding: 0.2rem 0.55rem;
-  background: var(--proj-tag-bg);
-  color: var(--proj-tag-text);
-  border-radius: 4px;
-  border: 1px solid var(--proj-border);
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.p-tag-accent {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-color: var(--primary-border);
+}
+
+html[data-theme='dark'] .p-tag-accent {
+  color: var(--primary);
 }
 </style>
 
 <div class="projects-container">
 
-  <!-- Project 1 -->
+  <!-- Project 1: Work-State -->
   <article class="project-card-item">
     <div class="project-card-header">
       <h3 class="project-card-title">
-        <i class="fa-solid fa-layer-group" style="color: var(--proj-primary);"></i>
+        <i class="fa-solid fa-layer-group" style="color: var(--primary);"></i>
         <a href="https://github.com/USFAkbari/Work-State" target="_blank" rel="noopener">Work-State Enterprise Engine</a>
       </h3>
       <span class="project-badge">Full-Stack & Systems</span>
@@ -152,8 +141,8 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
       </ul>
     </div>
     <div class="project-tech-tags">
-      <span class="p-tag">FastAPI</span>
-      <span class="p-tag">Python 3.11</span>
+      <span class="p-tag p-tag-accent">FastAPI</span>
+      <span class="p-tag p-tag-accent">Python 3.11</span>
       <span class="p-tag">React 18</span>
       <span class="p-tag">PostgreSQL</span>
       <span class="p-tag">Docker</span>
@@ -162,11 +151,11 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     </div>
   </article>
 
-  <!-- Project 2 -->
+  <!-- Project 2: Planets Detection -->
   <article class="project-card-item">
     <div class="project-card-header">
       <h3 class="project-card-title">
-        <i class="fa-solid fa-satellite" style="color: var(--proj-primary);"></i>
+        <i class="fa-solid fa-satellite" style="color: var(--primary);"></i>
         <a href="https://github.com/USFAkbari" target="_blank" rel="noopener">Automated Detection & Classification of Solar System Planets</a>
       </h3>
       <span class="project-badge">Applied AI & Computer Vision</span>
@@ -179,8 +168,8 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
       </ul>
     </div>
     <div class="project-tech-tags">
-      <span class="p-tag">Python</span>
-      <span class="p-tag">OpenCV</span>
+      <span class="p-tag p-tag-accent">Python</span>
+      <span class="p-tag p-tag-accent">OpenCV</span>
       <span class="p-tag">scikit-learn</span>
       <span class="p-tag">NumPy</span>
       <span class="p-tag">Matplotlib</span>
@@ -188,11 +177,11 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     </div>
   </article>
 
-  <!-- Project 3 -->
+  <!-- Project 3: Attendance Dashboard -->
   <article class="project-card-item">
     <div class="project-card-header">
       <h3 class="project-card-title">
-        <i class="fa-solid fa-fingerprint" style="color: var(--proj-primary);"></i>
+        <i class="fa-solid fa-fingerprint" style="color: var(--primary);"></i>
         <a href="https://github.com/USFAkbari/Attendance_Ddashboard" target="_blank" rel="noopener">HR Biometric Attendance & Evaluation Pipeline</a>
       </h3>
       <span class="project-badge">Data Engineering & Automation</span>
@@ -205,7 +194,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
       </ul>
     </div>
     <div class="project-tech-tags">
-      <span class="p-tag">Python</span>
+      <span class="p-tag p-tag-accent">Python</span>
       <span class="p-tag">FastAPI</span>
       <span class="p-tag">Pandas</span>
       <span class="p-tag">pyzk</span>
@@ -214,14 +203,40 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
     </div>
   </article>
 
-  <!-- Project 4 -->
+  <!-- Project 4: Enterprise DevOps & Cloud Infrastructure -->
   <article class="project-card-item">
     <div class="project-card-header">
       <h3 class="project-card-title">
-        <i class="fa-solid fa-terminal" style="color: var(--proj-primary);"></i>
+        <i class="fa-solid fa-server" style="color: var(--primary);"></i>
+        <a href="https://github.com/USFAkbari" target="_blank" rel="noopener">Enterprise DevOps & Cloud Infrastructure Operations</a>
+      </h3>
+      <span class="project-badge">Cloud-Native & Systems</span>
+    </div>
+    <div class="project-card-body">
+      <ul>
+        <li><strong>High-Availability Cluster Operations:</strong> Maintained multi-node VMware ESXi production environments hosting ~10 production VMs serving over <strong>100,000 registered users</strong> with zero unplanned downtime.</li>
+        <li><strong>Containerization & Automation:</strong> Containerized 15+ production services using Docker Compose, automated backup pipelines via Bash and TrueNAS ZFS snapshots.</li>
+        <li><strong>Telephony & Storage:</strong> Zero-downtime FreePBX VoIP communications and TrueNAS ZFS storage arrays (1–10 TB) with automated snapshot replication.</li>
+      </ul>
+    </div>
+    <div class="project-tech-tags">
+      <span class="p-tag p-tag-accent">VMware ESXi</span>
+      <span class="p-tag p-tag-accent">Docker</span>
+      <span class="p-tag">TrueNAS ZFS</span>
+      <span class="p-tag">FreePBX</span>
+      <span class="p-tag">Bash</span>
+      <span class="p-tag">Ubuntu Server</span>
+    </div>
+  </article>
+
+  <!-- Project 5: LVM Disk Extender & DevOps Utilities -->
+  <article class="project-card-item">
+    <div class="project-card-header">
+      <h3 class="project-card-title">
+        <i class="fa-solid fa-terminal" style="color: var(--primary);"></i>
         <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener">LVM Disk Extender & Open-Source DevOps Utilities</a>
       </h3>
-      <span class="project-badge">Cloud-Native & Linux Ops</span>
+      <span class="project-badge">Linux Operations</span>
     </div>
     <div class="project-card-body">
       <ul>
@@ -230,7 +245,7 @@ html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
       </ul>
     </div>
     <div class="project-tech-tags">
-      <span class="p-tag">Bash</span>
+      <span class="p-tag p-tag-accent">Bash</span>
       <span class="p-tag">Linux LVM</span>
       <span class="p-tag">Docker</span>
       <span class="p-tag">SysAdmin</span>

@@ -1,9 +1,33 @@
 /*******************************************************************************
- * Custom Themes CSS Variables (UI/UX Pro Max - cv_prototype theme)
+ * Custom Themes CSS Variables & UI/UX Pro Max Tokens (from index.html)
  ******************************************************************************/
 
 :root {
   color-scheme: light;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --primary-light: #e0f2fe;
+  --primary-border: #bae6fd;
+  --border: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --tag-bg: #f1f5f9;
+  --tag-text: #334155;
+  --accent: #0d9488;
+  --accent-light: #ccfbf1;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* al-folio core overrides */
   --global-bg-color: #f8fafc !important;
   --global-code-bg-color: #f1f5f9 !important;
   --global-text-color: #0f172a !important;
@@ -26,11 +50,30 @@
   --global-radius-sm: 6px !important;
   --global-radius-md: 10px !important;
   --global-radius-lg: 16px !important;
-  --global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.06) !important;
+  --global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05) !important;
 }
 
-html[data-theme='dark'] {
+html[data-theme='dark'], body.dark-theme, [data-theme="dark"] {
   color-scheme: dark;
+  --bg: #0b0f19;
+  --surface: #131b2e;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --primary: #38bdf8;
+  --primary-dark: #0284c7;
+  --primary-light: #082f49;
+  --primary-border: #075985;
+  --border: #1e293b;
+  --border-hover: #334155;
+  --tag-bg: #1e293b;
+  --tag-text: #cbd5e1;
+  --accent: #2dd4bf;
+  --accent-light: #134e4a;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 12px 0 rgb(0 0 0 / 0.4);
+
+  /* al-folio core overrides */
   --global-bg-color: #0b0f19 !important;
   --global-code-bg-color: #131b2e !important;
   --global-text-color: #f1f5f9 !important;
@@ -50,29 +93,30 @@ html[data-theme='dark'] {
   --global-newsletter-bg-color: #131b2e !important;
   --global-newsletter-text-color: #f1f5f9 !important;
   --global-accent-color: #2dd4bf !important;
-  --global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3) !important;
+  --global-shadow: 0 4px 12px 0 rgb(0 0 0 / 0.4) !important;
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-family: var(--font-sans) !important;
   letter-spacing: -0.01em;
   background-color: var(--global-bg-color) !important;
   color: var(--global-text-color) !important;
+  line-height: 1.65;
 }
 
 code, pre, kbd, samp {
-  font-family: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-family: var(--font-mono) !important;
 }
 
 .navbar {
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid var(--global-divider-color) !important;
-  background-color: rgba(248, 250, 252, 0.85) !important;
+  background-color: rgba(248, 250, 252, 0.88) !important;
 }
 
 html[data-theme='dark'] .navbar {
-  background-color: rgba(11, 15, 25, 0.85) !important;
+  background-color: rgba(11, 15, 25, 0.88) !important;
 }
 
 .card {

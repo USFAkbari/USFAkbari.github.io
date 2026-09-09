@@ -1,0 +1,272 @@
+{
+  "basics": {
+    "name": "Yousef Akbari",
+    "label": "Prospective M.Sc. Candidate in CS / SE",
+    "image": "",
+    "email": "usfakbari@gmail.com",
+    "phone": "+98 937 212 37 82",
+    "url": "https://github.com/USFAkbari",
+    "summary": "Systems and DevOps Engineer with 2+ years experience in VMware ESXi, Docker containerization, TrueNAS ZFS storage, and FreePBX VoIP systems. Bachelor's in Computer Engineering (AI) from Azad University, North Tehran Branch. Research interests in Applied AI/Computer Vision, MLOps, Cloud-Native Systems Architecture, and Software Reliability.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Mashhad",
+      "countryCode": "IR",
+      "region": "Razavi Khorasan"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "yousefakbari",
+        "url": "https://linkedin.com/in/yousefakbari"
+      },
+      {
+        "network": "GitHub",
+        "username": "USFAkbari",
+        "url": "https://github.com/USFAkbari"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Khademan Emam Zaman (shamim313.com)",
+      "position": "Systems and DevOps Engineer",
+      "location": "Mashhad, Iran",
+      "startDate": "2025-01-01",
+      "endDate": "",
+      "summary": "Administered a multi-node VMware ESXi environment hosting ~10 production VMs for a nationally distributed platform serving 100,000+ registered users. Containerized 5+ production services with Docker, reducing deployment time by ~10% and limiting configuration drift. Automated backup and maintenance workflows using Veeam backup tools and Bash, recovering ~3-4 hours per week and reducing manual errors. Maintained zero-downtime operation for 6+ months on a FreePBX VoIP system supporting 20+ staff extensions. Managed firewall rules, DHCP, access control, and TrueNAS ZFS storage with automated snapshots for 1-10 TB of data.",
+      "highlights": [
+        "Administered multi-node VMware ESXi environment (~10 production VMs, 100k+ users)",
+        "Containerized 5+ production services with Docker (10% deployment time reduction)",
+        "Automated backup/maintenance workflows with Veeam + Bash (3-4 hrs/week saved)",
+        "Zero-downtime FreePBX VoIP system (6+ months, 20+ extensions)",
+        "Managed TrueNAS ZFS storage (1-10 TB) with automated snapshots"
+      ]
+    },
+    {
+      "name": "Part Software Group",
+      "position": "DevOps Engineer",
+      "location": "Mashhad, Iran",
+      "startDate": "2024-04-01",
+      "endDate": "2025-01-01",
+      "summary": "Managed 200+ virtual machines across development, staging, QA, and production environments. Standardized deployment workflows using the company's in-house Docker container platform (Kakado), and supported OS hardening, patching, monitoring, and weekly releases across 4+ environments.",
+      "highlights": [
+        "Managed 200+ VMs across dev/staging/QA/production environments",
+        "Standardized deployments with in-house Docker platform (Kakado)",
+        "Supported OS hardening, patching, monitoring, weekly releases (4+ envs)"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "IT Training Volunteer",
+      "position": "Computer Repair & IT Literacy Trainer",
+      "location": "Iran",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Computer repair and IT literacy training for non-technical users.",
+      "highlights": []
+    },
+    {
+      "organization": "Volunteer IT & ICDL Instructor",
+      "position": "ICDL Instructor",
+      "location": "Iran",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Designed and delivered training sessions on core ICDL modules (file management, spreadsheets, online security) for non-technical adult learners.",
+      "highlights": []
+    },
+    {
+      "organization": "Azad University Cultural Affairs Department",
+      "position": "Graphic Design Volunteer",
+      "location": "Tehran, Iran",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Cultural and administrative materials design.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Azad University, North Tehran Branch",
+      "location": "Tehran, Iran",
+      "url": "https://www.iaut.ac.ir/",
+      "area": "Computer Engineering (Artificial Intelligence)",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2016-09-01",
+      "endDate": "2021-09-01",
+      "score": "",
+      "courses": [
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Image Processing",
+        "Data Structures and Algorithms",
+        "Software Engineering",
+        "Database Systems",
+        "Computer Networks",
+        "Operating Systems",
+        "Discrete Mathematics",
+        "Probability and Statistics"
+      ],
+      "highlights": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Crash Course on Python",
+      "date": "2024-01-01",
+      "issuer": "Google / Coursera",
+      "url": "https://www.coursera.org/learn/python-crash-course",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Using Python to Interact with the Operating System",
+      "date": "2024-01-01",
+      "issuer": "Google / Coursera",
+      "url": "https://www.coursera.org/learn/python-operating-system",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Kubernetes Administration (CKA path)",
+      "date": "2025-01-01",
+      "issuer": "Self-directed lab environment",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "Bash",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Infrastructure & Systems",
+      "level": "Advanced",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "VMware ESXi",
+        "Ubuntu",
+        "Windows Server",
+        "TrueNAS",
+        "ZFS",
+        "Veeam",
+        "MikroTik",
+        "TCP/IP",
+        "DNS",
+        "DHCP",
+        "FreePBX"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes (in progress)",
+        "Git",
+        "GitLab CI (in progress)",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "AI & Data Science",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "OpenCV",
+        "NumPy",
+        "Pandas",
+        "scikit-learn",
+        "pyzk",
+        "Matplotlib",
+        "Image Processing",
+        "Feature Extraction",
+        "SVM",
+        "KNN"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "Native / Professional",
+      "icon": "fa-solid fa-language",
+      "keywords": [
+        "Persian (Native)",
+        "English (Professional working proficiency, IELTS in preparation)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Persian",
+      "fluency": "Native speaker",
+      "icon": "fa-solid fa-flag"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency",
+      "icon": "fa-solid fa-flag-usa"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Applied AI and Computer Vision",
+      "icon": "fa-solid fa-eye",
+      "keywords": [
+        "Image processing",
+        "Object detection",
+        "Pattern recognition"
+      ]
+    },
+    {
+      "name": "MLOps and Intelligent Automation",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "Production ML deployment",
+        "Containerization",
+        "CI/CD",
+        "Orchestration",
+        "Predictive operations"
+      ]
+    },
+    {
+      "name": "Cloud-Native Systems Architecture",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "Distributed systems",
+        "Containerized infrastructure",
+        "High-availability workloads"
+      ]
+    },
+    {
+      "name": "Software Reliability and Performance",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": [
+        "Fault tolerance",
+        "Observability",
+        "Deployment strategies",
+        "Empirical systems analysis"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Automated Detection and Classification of Solar System Planets",
+      "summary": "Bachelor's Internship Project at Azad University, North Tehran Branch (2020-2021). Designed a computer vision pipeline for detecting and classifying planets in astronomical imagery from NASA and ESA archives. Applied Gaussian/median filtering, histogram equalization, CLAHE, background subtraction, Canny edge detection, and OpenCV contour analysis. Extracted morphological, photometric, color-histogram, and GLCM texture features, then evaluated SVM and KNN classifiers for multi-class planetary identification.",
+      "highlights": ["Python", "OpenCV", "NumPy", "scikit-learn", "Matplotlib"],
+      "startDate": "2020-01-01",
+      "endDate": "2021-12-31"
+    }
+  ]
+}

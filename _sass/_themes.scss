@@ -1,0 +1,111 @@
+/*******************************************************************************
+ * Custom Themes CSS Variables (UI/UX Pro Max - cv_prototype theme)
+ ******************************************************************************/
+
+:root {
+  --global-bg-color: #{$light-bg-color};
+  --global-code-bg-color: #{$light-code-bg-color};
+  --global-text-color: #{$light-text-color};
+  --global-text-color-light: #{$light-text-color-light};
+  --global-theme-color: #{$light-theme-color};
+  --global-hover-color: #{$light-hover-color};
+  --global-hover-text-color: #{$light-hover-text-color};
+  --global-footer-bg-color: #{$light-footer-bg-color};
+  --global-footer-text-color: #{$light-footer-text-color};
+  --global-footer-link-color: #{$light-footer-link-color};
+  --global-distill-app-color: #{$light-text-color-light};
+  --global-divider-color: #{$light-divider-color};
+  --global-card-bg-color: #{$light-card-bg-color};
+  --global-back-to-top-bg-color: #{$light-back-to-top-bg-color};
+  --global-back-to-top-text-color: #{$light-back-to-top-text-color};
+  --global-newsletter-bg-color: #{$light-newsletter-bg-color};
+  --global-newsletter-text-color: #{$light-newsletter-text-color};
+  --global-accent-color: #0d9488;
+  --global-border-color: #e2e8f0;
+  --global-radius-sm: 6px;
+  --global-radius-md: 10px;
+  --global-radius-lg: 16px;
+  --global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+
+  .fa-sun {
+    display: none;
+  }
+  .fa-moon {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+}
+
+html[data-theme='dark'] {
+  --global-bg-color: #{$dark-bg-color};
+  --global-code-bg-color: #{$dark-code-bg-color};
+  --global-text-color: #{$dark-text-color};
+  --global-text-color-light: #{$dark-text-color-light};
+  --global-theme-color: #{$dark-theme-color};
+  --global-hover-color: #{$dark-hover-color};
+  --global-hover-text-color: #{$dark-hover-text-color};
+  --global-footer-bg-color: #{$dark-footer-bg-color};
+  --global-footer-text-color: #{$dark-footer-text-color};
+  --global-footer-link-color: #{$dark-footer-link-color};
+  --global-distill-app-color: #{$dark-text-color-light};
+  --global-divider-color: #{$dark-divider-color};
+  --global-card-bg-color: #{$dark-card-bg-color};
+  --global-back-to-top-bg-color: #{$dark-back-to-top-bg-color};
+  --global-back-to-top-text-color: #{$dark-back-to-top-text-color};
+  --global-newsletter-bg-color: #{$dark-newsletter-bg-color};
+  --global-newsletter-text-color: #{$dark-newsletter-text-color};
+  --global-accent-color: #2dd4bf;
+  --global-border-color: #1e293b;
+  --global-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+
+  .fa-sun {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+  .fa-moon {
+    display: none;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  letter-spacing: -0.01em;
+  background-color: var(--global-bg-color) !important;
+  color: var(--global-text-color) !important;
+}
+
+code, pre, kbd, samp {
+  font-family: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
+
+.navbar {
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--global-divider-color) !important;
+  background-color: rgba(248, 250, 252, 0.85) !important;
+}
+
+html[data-theme='dark'] .navbar {
+  background-color: rgba(11, 15, 25, 0.85) !important;
+}
+
+.card {
+  border: 1px solid var(--global-divider-color) !important;
+  border-radius: var(--global-radius-md) !important;
+  background-color: var(--global-card-bg-color) !important;
+  box-shadow: var(--global-shadow) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}

@@ -1,0 +1,50 @@
+/*******************************************************************************
+ * Custom Variables for al-folio (UI/UX Pro Max - cv_prototype theme)
+ ******************************************************************************/
+
+// Fonts
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// Base light colors
+$white-color: #ffffff !default;
+$black-color: #0f172a !default;
+$grey-color: #475569 !default;
+$grey-color-light: #94a3b8 !default;
+$grey-color-dark: #1e293b !default;
+
+// Light theme tokens
+$light-bg-color: #f8fafc !default;
+$light-code-bg-color: #f1f5f9 !default;
+$light-text-color: #0f172a !default;
+$light-text-color-light: #475569 !default;
+$light-theme-color: #0284c7 !default;
+$light-hover-color: #0369a1 !default;
+$light-hover-text-color: #0284c7 !default;
+$light-footer-bg-color: #f8fafc !default;
+$light-footer-text-color: #64748b !default;
+$light-footer-link-color: #0284c7 !default;
+$light-divider-color: #e2e8f0 !default;
+$light-card-bg-color: #ffffff !default;
+$light-back-to-top-bg-color: rgba(2, 132, 199, 0.9) !default;
+$light-back-to-top-text-color: #ffffff !default;
+$light-newsletter-bg-color: #f1f5f9 !default;
+$light-newsletter-text-color: #0f172a !default;
+
+// Dark theme tokens
+$dark-bg-color: #0b0f19 !default;
+$dark-code-bg-color: #131b2e !default;
+$dark-text-color: #f1f5f9 !default;
+$dark-text-color-light: #94a3b8 !default;
+$dark-theme-color: #38bdf8 !default;
+$dark-hover-color: #7dd3fc !default;
+$dark-hover-text-color: #38bdf8 !default;
+$dark-footer-bg-color: #0b0f19 !default;
+$dark-footer-text-color: #64748b !default;
+$dark-footer-link-color: #38bdf8 !default;
+$dark-divider-color: #1e293b !default;
+$dark-card-bg-color: #131b2e !default;
+$dark-back-to-top-bg-color: rgba(56, 189, 248, 0.9) !default;
+$dark-back-to-top-text-color: #0b0f19 !default;
+$dark-newsletter-bg-color: #131b2e !default;
+$dark-newsletter-text-color: #f1f5f9 !default;

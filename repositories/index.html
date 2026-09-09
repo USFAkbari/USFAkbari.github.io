@@ -2,9 +2,108 @@
   :root {
     --max-content-width: 930px;
   }
-</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%99%BE%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://usfakbari.github.io/repositories/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%99%BE%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://usfakbari.github.io/repositories/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Yousef Akbari </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">Curriculum Vitae </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Featured Projects </a> </li> <li class="nav-item active"> <a class="nav-link" href="/repositories/">repositories <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">repositories</h1> <p class="post-description">Open-source DevOps automation tools, cloud scripts, system utilities, and machine learning models.</p> </header> <article> <div class="repositories-list my-3"> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/DnsMnager" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> DnsMnager </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-primary px-2 py-1">DevOps &amp; Networking</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Automated DNS record management and upstream nameserver switching utility for Linux servers.<br> • <strong>Key Capabilities:</strong> Rapid CLI-based host resolution updates, upstream DNS health verification, and zero-downtime cache flushing.<br> • <strong>Tech &amp; Stack:</strong> Shell, Bash, Systemd-resolved, Linux Network Stack. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Bash</span> <span class="badge badge-light border">Linux</span> <span class="badge badge-light border">DNS</span> <span class="badge badge-light border">Systemd</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> LVM_Disk_Extender </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-primary px-2 py-1">Storage &amp; Systems</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Automated zero-downtime Linux LVM logical volume resize and partition expansion tool.<br> • <strong>Key Capabilities:</strong> Scans unallocated block devices, auto-resizes physical/volume groups, and grows ext4/xfs filesystems online.<br> • <strong>Tech &amp; Stack:</strong> Bash, LVM2, parted, resize2fs, xfs_growfs. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Bash</span> <span class="badge badge-light border">LVM2</span> <span class="badge badge-light border">Storage Automation</span> <span class="badge badge-light border">Linux</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/docker_Initiation" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> docker_Initiation </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-primary px-2 py-1">DevOps &amp; Cloud</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Production-ready Docker Engine &amp; Docker Compose provisioning and security hardening script.<br> • <strong>Key Capabilities:</strong> Automated daemon.json registry mirror configuration, log rotation caps, non-root user groups, and systemd tuning.<br> • <strong>Tech &amp; Stack:</strong> Shell, Docker CE, Docker Compose, Linux Security. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Docker</span> <span class="badge badge-light border">Docker Compose</span> <span class="badge badge-light border">Shell</span> <span class="badge badge-light border">Provisioning</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/proxy-health-checker" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> proxy-health-checker </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-primary px-2 py-1">Observability &amp; Reliability</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> High-frequency health probe &amp; latency benchmark utility for reverse proxies, CDN edge nodes, and load balancers.<br> • <strong>Key Capabilities:</strong> Multi-target status code assertions, SSL expiry checks, response time histograms, and automatic failover hooks.<br> • <strong>Tech &amp; Stack:</strong> Bash, cURL, jq, Nginx monitoring, Cron automation. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Bash</span> <span class="badge badge-light border">cURL</span> <span class="badge badge-light border">Observability</span> <span class="badge badge-light border">Nginx</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/Push_Notification" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> Push_Notification </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-success px-2 py-1">Backend &amp; Messaging</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Multi-channel push notification backend and client subscription lifecycle service.<br> • <strong>Key Capabilities:</strong> Web Push protocol implementation with VAPID authentication, payload encryption, and subscriber queue dispatching.<br> • <strong>Tech &amp; Stack:</strong> Python, WebPush, Service Workers, RESTful API. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Python</span> <span class="badge badge-light border">WebPush</span> <span class="badge badge-light border">Service Workers</span> <span class="badge badge-light border">REST API</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/Excel_Service" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> Excel_Service </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-success px-2 py-1">Data Automation</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Automated spreadsheet ingestion, reconciliation, and structured report generation microservice.<br> • <strong>Key Capabilities:</strong> Persian/RTL layout formatting, automated column matching across heterogeneous exports, and formula preservation.<br> • <strong>Tech &amp; Stack:</strong> Python, openpyxl, Pandas, FastAPI. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Python</span> <span class="badge badge-light border">Pandas</span> <span class="badge badge-light border">openpyxl</span> <span class="badge badge-light border">ETL</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/Bia_Pain_Bache" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> Bia_Pain_Bache </a> </h4> <span class="badge badge-primary px-2 py-1">Networking &amp; Core</span> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Cross-platform network proxy management GUI panel and subscription aggregator.<br> • <strong>Key Capabilities:</strong> TCP fragmentation tuning, Cloudflare WARP configuration, and unified routing rules for sing-box &amp; Xray clients.<br> • <strong>Tech &amp; Stack:</strong> Go, Node.js, singbox-core, xray-core, Web GUI. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Go</span> <span class="badge badge-light border">Node.js</span> <span class="badge badge-light border">sing-box</span> <span class="badge badge-light border">xray-core</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/Audio_Signal_Processing" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> Audio_Signal_Processing </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-info px-2 py-1">AI &amp; Signal Processing</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Audio digital signal processing (DSP) and feature extraction toolkit for machine learning models.<br> • <strong>Key Capabilities:</strong> Computes Mel-spectrograms, MFCC coefficients, chroma features, spectral roll-off, and zero-crossing rates.<br> • <strong>Tech &amp; Stack:</strong> Python, Librosa, NumPy, SciPy, Matplotlib. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Python</span> <span class="badge badge-light border">Librosa</span> <span class="badge badge-light border">DSP</span> <span class="badge badge-light border">NumPy</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/house-price-prediction-linear-regression" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> House Price Prediction (Linear Regression) </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-info px-2 py-1">Applied AI</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Multivariate linear regression pipeline with exploratory data analysis and statistical validation.<br> • <strong>Key Capabilities:</strong> Outlier detection, multicollinearity mitigation (VIF), gradient descent optimization, and regression diagnostics.<br> • <strong>Tech &amp; Stack:</strong> Python, scikit-learn, Pandas, Seaborn, Matplotlib. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Python</span> <span class="badge badge-light border">scikit-learn</span> <span class="badge badge-light border">Pandas</span> <span class="badge badge-light border">EDA</span> </div> </div> <div class="card mb-4 p-4 border shadow-sm hoverable"> <div class="d-flex flex-wrap justify-content-between align-items-center mb-2"> <h4 class="card-title font-weight-bold mb-1"> <a href="https://github.com/USFAkbari/ToValet" target="_blank" rel="noopener" class="text-primary text-decoration-none"> <i class="fa-brands fa-github"></i> ToValet </a> </h4> <div> <span class="badge badge-warning text-dark px-2 py-1 mr-1">⭐ 1 Star</span> <span class="badge badge-primary px-2 py-1">DevOps &amp; Tooling</span> </div> </div> <p class="card-text text-muted mb-2" style="line-height: 1.5;"> • <strong>Core Purpose:</strong> Zero-configuration local web development server environment for Linux inspired by Laravel Valet.<br> • <strong>Key Capabilities:</strong> Automatic site discovery, wildcard local DNS routing (.test domains), on-the-fly Nginx vhost generation, and local SSL certificates.<br> • <strong>Tech &amp; Stack:</strong> Shell, Nginx, Dnsmasq, OpenSSL. </p> <div class="d-flex flex-wrap gap-1 mt-2"> <span class="badge badge-light border">Shell</span> <span class="badge badge-light border">Nginx</span> <span class="badge badge-light border">Dnsmasq</span> <span class="badge badge-light border">Local Dev</span> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Yousef Akbari. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Yousef Akbari </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">Curriculum Vitae </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Featured Projects </a> </li> <li class="nav-item active"> <a class="nav-link" href="/repositories/">repositories <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">repositories</h1> <p class="post-description">Open-source DevOps automation tools, cloud scripts, system utilities, and machine learning models.</p> </header> <article> <style>
+.repositories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.repo-card-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.4rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.repo-card-item:hover {
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.repo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.repo-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.repo-card-title a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.repo-card-title a:hover {
+  color: var(--primary-dark);
+}
+
+.repo-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-border);
+  white-space: nowrap;
+}
+
+html[data-theme='dark'] .repo-badge {
+  color: var(--primary);
+}
+
+.star-badge {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+html[data-theme='dark'] .star-badge {
+  background: #451a03;
+  color: #fde68a;
+  border: 1px solid #78350f;
+}
+
+.repo-card-body {
+  font-size: 0.91rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.repo-card-body p {
+  margin: 0;
+}
+
+.repo-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+</style> <div class="repositories-container"> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/DnsMnager" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> DnsMnager </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">DevOps &amp; Networking</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Automated DNS record management and upstream nameserver switching utility for Linux servers.<br> • <strong>Key Capabilities:</strong> Rapid CLI-based host resolution updates, upstream DNS health verification, and zero-downtime cache flushing.<br> • <strong>Tech &amp; Stack:</strong> Shell, Bash, Systemd-resolved, Linux Network Stack. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Bash</span> <span class="tag">Linux</span> <span class="tag">DNS</span> <span class="tag">Systemd</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/LVM_Disk_Extender" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> LVM_Disk_Extender </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">Storage &amp; Systems</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Automated zero-downtime Linux LVM logical volume resize and partition expansion tool.<br> • <strong>Key Capabilities:</strong> Scans unallocated block devices, auto-resizes physical/volume groups, and grows ext4/xfs filesystems online.<br> • <strong>Tech &amp; Stack:</strong> Bash, LVM2, parted, resize2fs, xfs_growfs. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Bash</span> <span class="tag">LVM2</span> <span class="tag">Storage Automation</span> <span class="tag">Linux</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/docker_Initiation" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> docker_Initiation </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">DevOps &amp; Cloud</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Production-ready Docker Engine &amp; Docker Compose provisioning and security hardening script.<br> • <strong>Key Capabilities:</strong> Automated daemon.json registry mirror configuration, log rotation caps, non-root user groups, and systemd tuning.<br> • <strong>Tech &amp; Stack:</strong> Shell, Docker CE, Docker Compose, Linux Security. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Docker</span> <span class="tag">Docker Compose</span> <span class="tag">Shell</span> <span class="tag">Provisioning</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/proxy-health-checker" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> proxy-health-checker </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">Observability &amp; Reliability</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> High-frequency health probe &amp; latency benchmark utility for reverse proxies, CDN edge nodes, and load balancers.<br> • <strong>Key Capabilities:</strong> Multi-target status code assertions, SSL expiry checks, response time histograms, and automatic failover hooks.<br> • <strong>Tech &amp; Stack:</strong> Bash, cURL, jq, Nginx monitoring, Cron automation. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Bash</span> <span class="tag">cURL</span> <span class="tag">Observability</span> <span class="tag">Nginx</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/Push_Notification" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Push_Notification </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">Backend &amp; Messaging</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Multi-channel push notification backend and client subscription lifecycle service.<br> • <strong>Key Capabilities:</strong> Web Push protocol implementation with VAPID authentication, payload encryption, and subscriber queue dispatching.<br> • <strong>Tech &amp; Stack:</strong> Python, WebPush, Service Workers, RESTful API. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Python</span> <span class="tag">WebPush</span> <span class="tag">Service Workers</span> <span class="tag">REST API</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/Excel_Service" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Excel_Service </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">Data Automation</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Automated spreadsheet ingestion, reconciliation, and structured report generation microservice.<br> • <strong>Key Capabilities:</strong> Persian/RTL layout formatting, automated column matching across heterogeneous exports, and formula preservation.<br> • <strong>Tech &amp; Stack:</strong> Python, openpyxl, Pandas, FastAPI. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Python</span> <span class="tag">Pandas</span> <span class="tag">openpyxl</span> <span class="tag">ETL</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/Bia_Pain_Bache" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Bia_Pain_Bache </a> </h3> <span class="repo-badge">Networking &amp; Core</span> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Cross-platform network proxy management GUI panel and subscription aggregator.<br> • <strong>Key Capabilities:</strong> TCP fragmentation tuning, Cloudflare WARP configuration, and unified routing rules for sing-box &amp; Xray clients.<br> • <strong>Tech &amp; Stack:</strong> Go, Node.js, singbox-core, xray-core, Web GUI. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Go</span> <span class="tag">Node.js</span> <span class="tag">sing-box</span> <span class="tag">xray-core</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/Audio_Signal_Processing" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> Audio_Signal_Processing </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">AI &amp; Signal Processing</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Audio digital signal processing (DSP) and feature extraction toolkit for machine learning models.<br> • <strong>Key Capabilities:</strong> Computes Mel-spectrograms, MFCC coefficients, chroma features, spectral roll-off, and zero-crossing rates.<br> • <strong>Tech &amp; Stack:</strong> Python, Librosa, NumPy, SciPy, Matplotlib. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Python</span> <span class="tag">Librosa</span> <span class="tag">DSP</span> <span class="tag">NumPy</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/house-price-prediction-linear-regression" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> House Price Prediction (Linear Regression) </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">Applied AI</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Multivariate linear regression pipeline with exploratory data analysis and statistical validation.<br> • <strong>Key Capabilities:</strong> Outlier detection, multicollinearity mitigation (VIF), gradient descent optimization, and regression diagnostics.<br> • <strong>Tech &amp; Stack:</strong> Python, scikit-learn, Pandas, Seaborn, Matplotlib. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Python</span> <span class="tag">scikit-learn</span> <span class="tag">Pandas</span> <span class="tag">EDA</span> </div> </article> <article class="repo-card-item"> <div class="repo-card-header"> <h3 class="repo-card-title"> <a href="https://github.com/USFAkbari/ToValet" target="_blank" rel="noopener"> <i class="fa-brands fa-github"></i> ToValet </a> </h3> <div class="d-flex align-items-center gap-1"> <span class="star-badge">⭐ 1 Star</span> <span class="repo-badge">DevOps &amp; Tooling</span> </div> </div> <div class="repo-card-body"> <p> • <strong>Core Purpose:</strong> Zero-configuration local web development server environment for Linux inspired by Laravel Valet.<br> • <strong>Key Capabilities:</strong> Automatic site discovery, wildcard local DNS routing (.test domains), on-the-fly Nginx vhost generation, and local SSL certificates.<br> • <strong>Tech &amp; Stack:</strong> Shell, Nginx, Dnsmasq, OpenSSL. </p> </div> <div class="repo-tech-tags"> <span class="tag tag-accent">Shell</span> <span class="tag">Nginx</span> <span class="tag">Dnsmasq</span> <span class="tag">Local Dev</span> </div> </article> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Yousef Akbari. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -43,40 +142,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-a-post-with-marimo-snippets",
-        
-          title: "a post with marimo snippets",
-        
-        description: "running Python in the browser with marimo",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/marimo/";
-          
-        },
-      },{id: "post-a-post-with-plotly-js",
-        
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/plotly/";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -85,237 +151,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/typograms/";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/post-citation/";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-interactive-tables",
-        
-          title: "displaying beautiful interactive tables",
-        
-        description: "an example of how to use interactive tables in al-folio",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-یک-نوشتهٔ-راست-چین",
-        
-          title: "یک نوشتهٔ راست‌چین",
-        
-        description: "نمونه‌ای از پشتیبانی زبان‌های راست‌چین",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/rtl/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
@@ -329,111 +164,7 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "post-a-post-with-redirect",
-        
-          title: "a post with redirect",
-        
-        description: "you can also redirect to assets like pdf",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/assets/pdf/example_pdf.pdf";
-          
-        },
-      },{id: "post-a-post-with-diagrams",
-        
-          title: "a post with diagrams",
-        
-        description: "an example of a blog post with diagrams",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/diagrams/";
-          
-        },
-      },{id: "post-a-distill-style-blog-post",
-        
-          title: "a distill-style blog post",
-        
-        description: "an example of a distill-style blog post and main elements",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2021/distill/";
-          
-        },
-      },{id: "post-a-post-with-twitter",
-        
-          title: "a post with twitter",
-        
-        description: "an example of a blog post with twitter",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2020/twitter/";
-          
-        },
-      },{id: "post-a-post-with-disqus-comments",
-        
-          title: "a post with disqus comments",
-        
-        description: "an example of a blog post with disqus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/disqus-comments/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
-          
-        },
-      },{id: "post-a-post-with-code",
-        
-          title: "a post with code",
-        
-        description: "an example of a blog post with some code",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/code/";
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/images/";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
-          
-        },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-my-devops-role-at-part-software-group-managing-200-vms-across-dev-staging-qa-and-production-environments-in-mashhad-iran",
+      },{id: "news-started-my-devops-role-at-part-software-group-managing-200-vms-across-dev-staging-qa-and-production-environments-in-mashhad-iran",
           title: 'Started my DevOps role at Part Software Group, managing 200+ VMs across dev,...',
           description: "",
           section: "News",},{id: "news-joined-khademan-emam-zaman-shamim313-com-as-systems-and-devops-engineer-managing-multi-node-vmware-esxi-environments-and-docker-containerization-for-a-platform-serving-100-000-users",
@@ -467,16 +198,6 @@ ninja.data = [{
           description: "Virtualization cluster administration (VMware ESXi), containerized service delivery (Docker), and automated DR pipelines for 100k+ users.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
-            },},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
         id: 'social-email',
         title: 'email',

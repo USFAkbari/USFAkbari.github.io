@@ -1,21 +1,22 @@
 ---
 layout: page
 title: Appliance Store Platform
-description: High-performance e-commerce catalog, inventory control, and payment gateway integration.
+description: High-performance e-commerce catalog, dynamic inventory management, and transactional payment gateway integration.
 img: assets/img/5.jpg
 importance: 2
-category: Full-Stack & Web
+category: Full-Stack & Systems
 related_publications: false
 ---
 
-### Overview
-A comprehensive e-commerce and retail management platform for household appliances, featuring dynamic catalog filtering, shopping cart persistence, and order management.
+### System Architecture & Overview
 
-### Features & Engineering
-- **Catalog & Inventory:** Real-time stock reservation, multi-attribute product filters (category, brand, technical specs), and elastic search indexing.
-- **Checkout & Payments:** Secure payment gateway integration with transactional guarantees and automated SMS/email invoice notifications.
-- **Responsive Interface:** Mobile-first responsive UI optimized for low-bandwidth networks and mobile shoppers.
-- **Admin Portal:** Sales reporting, order lifecycle status tracking, and inventory replenishment alerts.
+A scalable e-commerce platform and retail back-office engine for home appliance distribution, featuring real-time inventory tracking, complex product attribute filtering, and transactional checkout pipelines.
+
+### Key Engineering Features
+- **Dynamic Catalog Engine:** Multi-faceted filtering (brand, technical specifications, price ranges, power ratings) backed by indexed relational queries.
+- **Transactional Checkout:** Secure payment gateway integration with ACID guarantees, order state transitions, and automated SMS/email dispatch.
+- **Mobile-First UX:** Ultra-fast, lightweight front-end tailored for seamless browsing on mobile devices and variable bandwidth connections.
+- **Administrative Back-Office:** Inventory replenishment triggers, order fulfillment tracking, and role-based staff permissions.
 
 ### Tech Stack
-`Python` `JavaScript` `Docker` `REST API` `TailwindCSS` `PostgreSQL`
+`Python` `JavaScript` `Docker` `RESTful APIs` `PostgreSQL` `TailwindCSS`

@@ -1,21 +1,22 @@
 ---
 layout: page
 title: Attendant & Evaluation Dashboards
-description: Real-time attendance monitoring, monthly KPI evaluation metrics, ticket management, and automated DOCX/Excel parsing.
+description: Real-time unit attendance monitoring, monthly KPI evaluation algorithms, ticket resolution analytics, and automated DOCX/Excel parsing.
 img: assets/img/6.jpg
-importance: 3
-category: Analytics & Automation
+importance: 1
+category: Data & Automation
 related_publications: false
 ---
 
-### Overview
-A comprehensive technical unit management and business intelligence dashboard suite providing real-time visibility into staff attendance, monthly performance evaluations, and helpdesk ticketing workflows.
+### System Architecture & Overview
 
-### Key Capabilities
-- **Automated Document Ingestion:** Intelligent parser converting unstructured Persian Word (.docx) reports and biometric time-clock logs into structured, formula-clean Excel sheets and relational tables.
-- **Monthly Evaluation Engine:** Automated scoring algorithms calculating departmental KPIs, SLA compliance, and trend analysis over time.
-- **Helpdesk & Ticket Metrics:** Real-time ticket lifecycle tracking, average resolution time dashboards, and technician workload heatmaps.
-- **Visualization:** Interactive charts (Chart.js / ECharts) with exportable PDF and Excel summaries.
+A specialized technical management intelligence suite providing organizational visibility into staff attendance metrics, monthly performance scorecards, and helpdesk SLA ticketing.
+
+### Key Engineering Features
+- **Automated Persian DOCX Ingestion:** Custom parsing pipeline extracting data from unstructured Persian Word (`.docx`) reports and biometric hardware time-clocks, converting them into structured, uncorrupted Excel workbooks and relational database rows.
+- **KPI Evaluation Engine:** Algorithmic calculation of monthly departmental performance indexes, attendance compliance rates, and trend projections over historical quarters.
+- **Helpdesk Lifecycle Metrics:** Real-time ticketing dashboards tracking average time to resolution (MTTR), technician load heatmaps, and priority escalation workflows.
+- **Reporting & Visualizations:** Dynamic data charts powered by Chart.js / ECharts with one-click export to PDF and cleanly formatted Excel files.
 
 ### Tech Stack
-`Python` `FastAPI` `Pandas` `openpyxl` `python-docx` `React` `Docker`
+`Python` `FastAPI` `Pandas` `openpyxl` `python-docx` `React` `Docker` `ECharts`

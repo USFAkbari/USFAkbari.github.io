@@ -287,6 +287,7 @@ description: Academic portfolio & CV of Yousef Akbari • Prospective M.Sc. Cand
 <!-- Quick Navigation Action Buttons -->
 <div class="hero-actions">
   <a href="/cv/" class="hero-btn hero-btn-primary"><i class="fa-solid fa-address-card"></i> View Full Academic CV</a>
+  <a href="/transcripts/" class="hero-btn hero-btn-outline"><i class="fa-solid fa-graduation-cap"></i> View Transcripts &amp; GPA</a>
   <a href="/assets/pdf/Yousef_Akbari_Academic_CV.pdf" target="_blank" class="hero-btn hero-btn-outline"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
   <a href="/projects/" class="hero-btn hero-btn-outline"><i class="fa-solid fa-diagram-project"></i> Featured Projects</a>
   <a href="mailto:usfakbari@gmail.com" class="hero-btn hero-btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact Directly</a>

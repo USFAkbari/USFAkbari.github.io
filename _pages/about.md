@@ -104,20 +104,25 @@ description: Academic portfolio & CV of Yousef Akbari • Prospective M.Sc. Cand
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin: 1.5rem 0 2.25rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+  margin: 1.25rem 0 2rem;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 600;
-  padding: 0.55rem 1.1rem;
+  padding: 0.5rem 0.85rem;
   border-radius: var(--radius-sm);
   text-decoration: none !important;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 0.15s ease;
   border: 1px solid var(--border);
   background: var(--surface);
